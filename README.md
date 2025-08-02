@@ -44,7 +44,6 @@ git clone https://github.com/cyberghosts02/cyberghosts-osint.git
 cd cyberghosts-osint
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
 python intel_hunter.py
 ```
 ### Kali Linux / ParrotOS
@@ -55,7 +54,6 @@ git clone https://github.com/cyberghosts02/cyberghosts-osint.git
 cd cyberghosts-osint
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
 python intel_hunter.py
 ```
 
@@ -68,7 +66,6 @@ git clone https://github.com/cyberghosts02/cyberghosts-osint.git
 cd cyberghosts-osint
 python -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
 python intel_hunter.py
 ```
 
@@ -79,7 +76,6 @@ git clone https://github.com/cyberghosts02/cyberghosts-osint.git
 cd cyberghosts-osint
 python -m venv venv
 venv\Scripts\activate
-pip install -r requirements.txt
 python intel_hunter.py
 ```
 
