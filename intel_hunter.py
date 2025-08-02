@@ -115,24 +115,6 @@ def save_report(module_name, content):
     print(Fore.GREEN + f"[+] Report saved to {filename}")
 
 # ===== Module Implementations =====
-# --- PAK SIM Lookup ---
-def pak_sim_lookup():
-    print(Fore.YELLOW + "[*] Running PAK SIM Lookup...")
-    number = input(Fore.CYAN + "Enter Pakistani phone number (03XXXXXXXXX): ").strip()
-    if not number.startswith("03") or len(number) != 11:
-        print(Fore.RED + "[!] Invalid number.")
-        return
-    try:
-        proxies = {'http': f'socks5h://127.0.0.1:{TOR_PORT}',
-                   'https': f'socks5h://127.0.0.1:{TOR_PORT}'} if is_tor_running() else None
-        url = f"https://pakistan-sim-database-search.example.com/search/{number}"
-        r = requests.get(url, proxies=proxies, timeout=15)
-        if r.status_code == 200:
-            save_report("pak_sim_lookup", r.text)
-        else:
-            print(Fore.RED + f"[!] HTTP {r.status_code}")
-    except Exception as e:
-        print(Fore.RED + f"[!] Error: {e}")
 
 # --- Username Scanner ---
 def username_scanner():
@@ -290,7 +272,7 @@ def pastebin_leak():
 
 # --- Full Recon Mode ---
 def full_recon():
-    pak_sim_lookup()
+    
     username_scanner()
     ip_geolocation()
     phone_lookup()
