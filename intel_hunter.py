@@ -273,7 +273,7 @@ def pastebin_leak():
 # --- Full Recon Mode ---
 def full_recon():
     
-    username_scanner()
+    username_scanner()1A
     ip_geolocation()
     phone_lookup()
     email_breach_lookup()
@@ -319,7 +319,7 @@ def main_menu():
             print("99. 📞  Developer Contact")
             print(" 0. ❌  Exit\n")
             ch = input(Fore.CYAN + "Enter choice: ").strip()
-            if ch == "1": pak_sim_lookup()
+            if
             elif ch == "2": username_scanner()
             elif ch == "3": ip_geolocation()
             elif ch == "4": phone_lookup()
