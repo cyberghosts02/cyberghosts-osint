@@ -19,8 +19,7 @@ CyberGhosts OSINT – A powerful all-in-one open-source intelligence toolkit wit
 
 ---
 
-## 🛠 Modules List
-1. 📱 PAK SIM Lookup  
+## 🛠 Modules List  
 2. 👤 Username Scanner  
 3. 🌍 IP Geolocation  
 4. 📞 Phone Lookup  
