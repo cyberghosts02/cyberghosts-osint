@@ -302,7 +302,7 @@ def main_menu():
         try:
             banner(is_tor_running())
             print(Fore.MAGENTA + "\nSelect a module:\n")
-            print(" 1. 📱  PAK SIM Lookup")
+            
             print(" 2. 👤  Username Scanner")
             print(" 3. 🌍  IP Geolocation")
             print(" 4. 📞  Phone Lookup")
