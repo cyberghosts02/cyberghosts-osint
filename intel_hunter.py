@@ -319,7 +319,6 @@ def main_menu():
             print("99. 📞  Developer Contact")
             print(" 0. ❌  Exit\n")
             ch = input(Fore.CYAN + "Enter choice: ").strip()
-            if
             elif ch == "2": username_scanner()
             elif ch == "3": ip_geolocation()
             elif ch == "4": phone_lookup()
