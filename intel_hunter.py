@@ -273,7 +273,7 @@ def pastebin_leak():
 # --- Full Recon Mode ---
 def full_recon():
     
-    username_scanner()1A
+    username_scanner()
     ip_geolocation()
     phone_lookup()
     email_breach_lookup()
